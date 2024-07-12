@@ -16,4 +16,20 @@ https://www.permit.io/blog/build-authorization-like-google
 
 `npm install express`
 
-4. 
+4. Setting up a docker:
+
+https://docs.permit.io/sdk/nodejs/quickstart-nodejs/?_gl=1*1hwtf0j*_gcl_au*MjAwNzY4NzQzMi4xNzE4NjM1Mzcx*_ga*MTMzNjc2MTA1Ny4xNzE4NjM1Mzcx*_ga_SPFKH5NXDE*MTcyMDc5ODIxOC4xMS4xLjE3MjA3OTk5NTQuMC4wLjA. 
+
+Run in terminal (Replace <YOUR_API_KEY> with your actual API key):
+
+`docker run -it -p 7766:7000 --env PDP_DEBUG=True --env PDP_API_KEY=<YOUR_API_KEY> permitio/pdp-v2:latest`
+
+5. Run:
+
+`node testing.js`
+
+6. Should output:
+
+"John can read 2023_report."
+"John cannot update 2023_report."
+"Jane can update 2023_report."
