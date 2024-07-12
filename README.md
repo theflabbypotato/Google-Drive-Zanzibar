@@ -31,5 +31,8 @@ Run in terminal (Replace <YOUR_API_KEY> with your actual API key):
 6. Should output:
 
 "John can read 2023_report."
+
 "John cannot update 2023_report."
+
 "Jane can update 2023_report."
+
