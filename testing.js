@@ -9,9 +9,7 @@ After installing docker, in terminal run:
 
 docker run -it -p 7766:7000 --env PDP_DEBUG=True --env PDP_API_KEY=<YOUR_API_KEY> permitio/pdp-v2:latest
 
-Mine:
-docker run -it -p 7766:7000 --env PDP_DEBUG=True --env PDP_API_KEY=permit_key_fe8nvJIkCSnjZSMmByItY1JUs9KqwIwrz6qVO7CDm7DfUi7DuUuhesGXE26kttWWC0O1jauoifyPhoJi6uJowo permitio/pdp-v2:latest
-
+Replace <YOUR_API_KEY> with your api key from permit.io
 */
 
 /************ PERMIT **************/ 
@@ -25,7 +23,7 @@ const permit = new Permit({
 
     pdp: 'http://localhost:7766',
     // your api key
-    token: 'permit_key_fe8nvJIkCSnjZSMmByItY1JUs9KqwIwrz6qVO7CDm7DfUi7DuUuhesGXE26kttWWC0O1jauoifyPhoJi6uJowo',
+    token: '<YOUR_API_KEY>',
 });
 
 /************ SETTING UP RESOURCE INSTANCES **************/ 
